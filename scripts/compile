@@ -1,0 +1,8 @@
+#!/bin/sh
+
+if [ -f "package.json" ]
+then
+  yarn
+fi
+
+exec faucet --compact --fingerprint
